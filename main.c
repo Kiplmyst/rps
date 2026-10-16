@@ -5,9 +5,6 @@
 int main() {
 
   // literally every variable
-  int rock = 0;
-  int paper = 1;
-  int scissors = 2;
   const int RANDGEN_MINIMUM = 0;
   const int RANDGEN_MAXIMUM = 2;
   
@@ -17,7 +14,11 @@ int main() {
   int usrChoice;
   
   printf("Rock, Paper, Scissors! Shoot! (0 > rock; 1 > paper; 2 > scissors)\n");
-  scanf("%d", &usrChoice);
+  if (scanf("%d", &usrChoice); == 1 && usrChoice == 0 || 1 || 2) {
+  } else {
+    printf("Invalid data detected!");
+    return 1;
+  }
 
   // conditions
   if (usrChoice == randGen) {
@@ -41,11 +42,7 @@ int main() {
   } else if (usrChoice == 2 && randGen == 1) {
     printf("You win! (Scissors : Paper)\n");
   
-  } else if (usrChoice != 0 || 1 || 2) {
-    printf("You have entered invalid data, closing...");
   }
-
-  printf("Good game!\nClosing...\n");
 
   return 0;
 }
