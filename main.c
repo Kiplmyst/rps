@@ -41,7 +41,7 @@ int main() {
   } else if (usrChoice == 2 && randGen == 1) {
     printf("You win! (Scissors : Paper)\n");
   
-  } else if (usrChoice != 0 || usrChoice != 1 || usrChoice != 2) {
+  } else if (usrChoice != 0 || 1 || 2) {
     printf("You have entered invalid data, closing...");
   }
 
