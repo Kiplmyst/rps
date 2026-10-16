@@ -14,7 +14,7 @@ int main() {
   int usrChoice;
   
   printf("Rock, Paper, Scissors! Shoot! (0 > rock; 1 > paper; 2 > scissors)\n");
-  if (scanf("%d", &usrChoice); == 1 && usrChoice == 0 || 1 || 2) {
+  if (scanf("%d", &usrChoice) == 1 && usrChoice == 0 || 1 || 2) {
   } else {
     printf("Invalid data detected!");
     return 1;
