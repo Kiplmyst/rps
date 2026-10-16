@@ -4,10 +4,8 @@
 
 int main() {
 
-  // literally every variable
   const int RANDGEN_MINIMUM = 0;
   const int RANDGEN_MAXIMUM = 2;
-  
   // doin meth for rands
   srand(time(NULL));
   int randGen = rand() % (RANDGEN_MAXIMUM - RANDGEN_MINIMUM + 1) + RANDGEN_MINIMUM;
